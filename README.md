@@ -17,7 +17,7 @@ El predictor de eclipses de La Hire es un dispositivo mecánico analógico (volv
 
 ## 📝 Uso
 1. **Simulador Digital:** Abre el archivo `index.html` en cualquier navegador moderno para interactuar con la volvelle digital.
-2. **Réplica Física:** Ejecuta el script de Python para actualizar las plantillas y genera el PDF. Imprime las piezas en cartulina, recórtalas siguiendo las líneas de corte (marcadas con `- - -`) y únelas mediante un encuadernador de latón.
+2. **Réplica Física:** Imprime las piezas en cartulina, recórtalas y únelas mediante un encuadernador de latón.
 
 ## 📚 Referencias Bibliográficas
 * Gislén, L., & Eade, C. (2016). *Philippe de la Hire’s eighteenth century eclipse predictor*. Journal of Astronomical History and Heritage.
