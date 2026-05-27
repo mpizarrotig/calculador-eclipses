@@ -5,6 +5,8 @@ Este proyecto es una reconstrucción científica y digital de la "Máquina de Ec
 ## 📜 Contexto Histórico
 El predictor de eclipses de La Hire es un dispositivo mecánico analógico (volvelle) diseñado a principios del siglo XVIII para resolver el complejo problema de la predicción de eclipses solares y lunares. Documentado originalmente en sus *Tabulae Astronomicae* (1702/1718) y popularizado en las *Récréations mathématiques et physiques* de Jacques Ozanam (1778), este instrumento permitía a astrónomos determinar efemérides sin necesidad de complejos cálculos trigonométricos.
 
+![Simulación del eclipse de 2026](eclipse_2026.png)
+
 ## 🚀 Características del Proyecto
 * **Simulación Interactiva:** Interfaz web (`index.html`) que permite rotar los discos (volvelles) mediante interacción táctil o ratón, con controles para simular eclipses históricos y ajustar los parámetros astronómicos.
 * **Maqueta imprimible:** Manual en formato PDF con instrucciones de uso, ejemplos y piezas para imprimir, recortar y ensamblar.
