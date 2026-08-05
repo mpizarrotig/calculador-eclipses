@@ -289,7 +289,7 @@
                 <li>El calendario civil (meses y días).</li>
                 <li>Las fases de luna nueva y luna llena.</li>
                 <li>Las zonas críticas próximas a los nodos celestes.</li>
-                <li>La aliada del eclipse, que actúa como indicador visual de alineación.</li>
+                <li>La alidada del eclipse, que actúa como indicador visual de alineación.</li>
             </ul>
             <p>Cuando estos componentes coinciden exactamente sobre el borde fiducial de la regla, se produce un eclipse.</p>
 
@@ -298,8 +298,8 @@
             <ul>
                 <li><strong>El disco inferior (Fijo):</strong> Lleva grabado el calendario (meses y días) dispuesto en espiral. Es la matriz temporal estática donde se lee directamente la fecha del año.</li>
                 <li><strong>El disco intermedio (Rotatorio):</strong> Contiene las zonas coloreadas que delimitan los nodos solares (en negro) y los nodos lunares (en rojo) en un año de eclipse o dracónico.</li>
-                <li><strong>El disco superior (Rotatorio / Aliada Principal):</strong> Incorpora las 13 ventanas o perforaciones circulares transparentes que representan las lunas nuevas (para eclipses de Sol) y las lunas llenas (para eclipses de Luna). Cuenta con una lengüeta o aliada para ajustar la época del año.</li>
-                <li><strong>La aliada del eclipse (Regla superior móvil):</strong> Una regla independiente diseñada con la estética de los astrolabios antiguos. Su borde derecho recto actúa como línea de precisión para señalar la fecha exacta evaluada en el calendario inferior y comprobar si cruza un nodo expuesto.</li>
+                <li><strong>El disco superior (Rotatorio / Alidada Principal):</strong> Incorpora las 13 ventanas o perforaciones circulares transparentes que representan las lunas nuevas (para eclipses de Sol) y las lunas llenas (para eclipses de Luna). Cuenta con una lengüeta o alidada para ajustar la época del año.</li>
+                <li><strong>La alidada del eclipse (Regla superior móvil):</strong> Una regla independiente diseñada con la estética de los astrolabios antiguos. Su borde derecho recto actúa como línea de precisión para señalar la fecha exacta evaluada en el calendario inferior y comprobar si cruza un nodo expuesto.</li>
             </ul>
 
             <h2>Ajustar la máquina</h2>
@@ -309,11 +309,11 @@
             <h3>Paso 2 — Calibrar la época en el calendario</h3>
             <p>Gira los discos superiores conjuntamente hasta alinear el índice o lengüeta del año lunar elegido con su fecha y hora exactas de inicio en el calendario inferior. Por ejemplo, para el año 2026, el número lunar es el 178 y debe hacerse coincidir rigurosamente con la posición del 14 de julio a las 15:25 UTC. Una vez hecho esto, los discos intermedio y superior quedan fijados entre sí.</p>
 
-            <h3>Paso 3 — Apuntar la aliada del eclipse</h3>
-            <p>Gira de forma independiente la aliada superior del eclipse hasta situar su borde fiducial sobre la fecha del día que deseas explorar en el calendario.</p>
+            <h3>Paso 3 — Apuntar la alidada del eclipse</h3>
+            <p>Gira de forma independiente la alidada superior del eclipse hasta situar su borde fiducial sobre la fecha del día que deseas explorar en el calendario.</p>
 
             <h2>¿Cómo se determina la existencia de un eclipse?</h2>
-            <p>Observa los orificios circulares del disco superior que quedan atravesados por el borde de la aliada:</p>
+            <p>Observa los orificios circulares del disco superior que quedan atravesados por el borde de la alidada:</p>
             <ul>
                 <li>Si un orificio circular deja ver una zona coloreada del disco intermedio debajo de la regla → <strong>un eclipse es posible en esa fecha</strong>.</li>
                 <li>Si el orificio corresponde a una Luna Nueva (ventanas externas con el símbolo solar ☉) → <strong>Eclipse de Sol</strong>.</li>
@@ -625,15 +625,15 @@
                     </div>
                     <img src="assets/disk_1_calendar.svg" alt="Disco 1: Calendario Espiral" style="z-index: 1;" onerror="triggerError()">
                     <img id="layer-d2" src="assets/disk_2_nodes.svg" alt="Disco 2: Nodos" style="z-index: 2;" onerror="triggerError()">
-                    <img id="layer-d3" src="assets/disk_3_aliade.svg" alt="Disco 3: Aliada Principal" style="z-index: 3;" onerror="triggerError()">
-                    <img id="layer-ali" src="assets/eclipse_aliade.svg" alt="Aliada de Lectura" style="z-index: 4; transform: rotate(45deg);" onerror="triggerError()">
+                    <img id="layer-d3" src="assets/disk_3_aliade.svg" alt="Disco 3: Alidada Principal" style="z-index: 3;" onerror="triggerError()">
+                    <img id="layer-ali" src="assets/eclipse_aliade.svg" alt="Alidada de Lectura" style="z-index: 4; transform: rotate(45deg);" onerror="triggerError()">
                 </div>
             </div>
 
             <div class="panel-row">
                 <h3>Modo de Arrastre (Interacción Directa)</h3>
                 <div class="drag-controls">
-                    <label><input type="radio" name="dragMode" value="ali" checked> Aliada del Eclipse</label>
+                    <label><input type="radio" name="dragMode" value="ali" checked> Alidada del Eclipse</label>
                     <label><input type="radio" name="dragMode" value="d2d3"> Discos 2 y 3 Juntos</label>
 		    <label><input type="radio" name="dragMode" value="d2"> Solo Disco 2 (Épocas)</label>
                     <label><input type="radio" name="dragMode" value="d3"> Solo Disco 3 (Nodos)</label>
@@ -663,7 +663,7 @@
                         <input type="range" id="sld-d3" min="-360" max="360" value="0" step="0.1">
                     </div>
                     <div class="slider-box">
-                        <label id="lbl-ali">Aliada del Eclipse: 0.0°</label>
+                        <label id="lbl-ali">Alidada del Eclipse: 0.0°</label>
                         <input type="range" id="sld-ali" min="-360" max="360" value="45" step="0.1">
                     </div>
                 </div>
@@ -688,10 +688,10 @@
             <p>Una característica brillante del diseño de La Hire es la inclusión deliberada de <strong>13 ventanas transparentes</strong> en lugar de las 12 que conforman un año lunar regular. Como el año lunar es aproximadamente 11 días más corto que el año civil, las lunaciones se van desplazando progresivamente con respecto a los meses de nuestro calendario. La decimotercera ventana actúa como un eslabón o "puente" matemático que se solapa sobre los primeros días del siguiente año lunar. Esto garantiza la continuidad del cálculo sin interrupciones, asegurando que el observador no pierda en el vacío ningún eclipse que ocurra justo en el tenso límite entre dos años consecutivos.</p>
 
             <h2>El Horizonte Temporal: Reglas de Lectura</h2>
-            <p>Esta adición de la decimotercera luna impone una estricta regla geométrica a la hora de realizar la lectura de las fechas mediante el borde recto de la regla indicadora de eclipses o aliada superior. La aliada marca un punto exacto en el tiempo, actuando como nuestra frontera temporal:</p>
+            <p>Esta adición de la decimotercera luna impone una estricta regla geométrica a la hora de realizar la lectura de las fechas mediante el borde recto de la regla indicadora de eclipses o alidada superior. La alidada marca un punto exacto en el tiempo, actuando como nuestra frontera temporal:</p>
             <ul>
                 <li><strong>Hacia el Futuro:</strong> Si deseamos explorar los eclipses que ocurrirán <em>después</em> de la fecha fijada como referencia de calibración en la lengüeta, debemos alinear el <strong>borde izquierdo</strong> de la regla con dicha fecha en el calendario. A partir de ahí, leeremos las fases lunares avanzando a través de los agujeros hacia la derecha, siguiendo la dirección cronológica espiral de los meses.</li>
-                <li><strong>Hacia el Pasado:</strong> Si, por el contrario, queremos verificar posibles eclipses ocurridos <em>antes</em> de nuestra fecha de referencia (o en los meses iniciales previos al ciclo de ese año lunar), utilizaremos el <strong>borde derecho</strong> de la aliada como indicador y exploraremos las ventanas lunares moviéndonos visualmente hacia la izquierda.</li>
+                <li><strong>Hacia el Pasado:</strong> Si, por el contrario, queremos verificar posibles eclipses ocurridos <em>antes</em> de nuestra fecha de referencia (o en los meses iniciales previos al ciclo de ese año lunar), utilizaremos el <strong>borde derecho</strong> de la alidada como indicador y exploraremos las ventanas lunares moviéndonos visualmente hacia la izquierda.</li>
             </ul>
 
             <h2>El uso de la Epacta en el Calculador</h2>
@@ -748,7 +748,7 @@
 
             document.getElementById('lbl-d2').textContent = `Rotación Disco 2 (Nodos): ${d2.toFixed(1)}°`;
             document.getElementById('lbl-d3').textContent = `Rotación Disco 3 (Épocas): ${d3.toFixed(1)}°`;
-            document.getElementById('lbl-ali').textContent = `Aliada del Eclipse: ${aliade.toFixed(1)}°`;
+            document.getElementById('lbl-ali').textContent = `Alidada del Eclipse: ${aliade.toFixed(1)}°`;
         }
 
         function loadPreset2026() {
